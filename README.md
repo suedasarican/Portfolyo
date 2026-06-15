@@ -1,16 +1,50 @@
-# React + Vite
+# ☁️ Süeda Nur Sarıcan - İnteraktif Gökyüzü Portfolyosu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Yapay zeka ve modern yazılım teknolojileriyle ilgilenen bir Bilgisayar Mühendisliği öğrencisi olarak, projelerimi ve yetkinliklerimi sergilemek amacıyla geliştirdiğim oyunlaştırılmış (gamified) ve estetik odaklı kişisel web portfolyosu.
 
-Currently, two official plugins are available:
+## ✨ Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Oyunlaştırılmış Etkileşim:** Gökyüzünde süzülen bulut adacıklarına tıklayarak projelere erişim.
+- **Modern Tasarım Dili (Glassmorphism):** Yarı şeffaf, buzlu cam efektine sahip paneller ve modallar.
+- **Pürüzsüz Animasyonlar:** Framer Motion ile tasarlanmış yay fiziğine (spring) dayalı geçişler ve hareketli arka plan.
+- **Özel İmleç Deneyimi:** Sitenin renk paletine uygun, bütünleşik özel imleç tasarımı.
+- **Tamamen Responsif:** Hem mobil cihazlarda hem de masaüstünde kusursuz bir deneyim sunar.
 
-## React Compiler
+## 🛠 Kullanılan Teknolojiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React.js 19** (Vite altyapısı ile)
+- **Tailwind CSS v4** (Hızlı ve modüler stil yönetimi)
+- **Framer Motion** (Gelişmiş animasyonlar)
+- **Lucide React** & Özel SVG İkonlar
 
-## Expanding the ESLint configuration
+## 🚀 Projeyi Yerelde Çalıştırma
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
+
+1. **Repoyu Klonlayın:**
+   ```bash
+   git clone https://github.com/suedasarican/Portfolyo.git
+   cd Portfolyo
+   ```
+
+2. **Bağımlılıkları Yükleyin:**
+   ```bash
+   npm install
+   ```
+
+3. **Geliştirme Sunucusunu Başlatın:**
+   ```bash
+   npm run dev
+   ```
+   Tarayıcınızda `http://localhost:5173/` veya belirtilen adrese giderek portfolyoyu önizleyebilirsiniz.
+
+4. **Üretim (Production) İçin Derleme:**
+   ```bash
+   npm run build
+   ```
+
+## 📬 İletişim
+
+- **E-posta:** suedanurssarican@gmail.com
+- **LinkedIn:** [linkedin.com/in/süeda-nur-sarıcan](https://www.linkedin.com/in/süeda-nur-sarıcan)
+- **GitHub:** [github.com/suedasarican](https://github.com/suedasarican)
