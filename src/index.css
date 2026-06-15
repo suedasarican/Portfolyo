@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-gradient-to-b from-blue-200 via-pink-100 to-orange-100 min-h-screen overflow-hidden text-slate-800 font-sans;
+  }
+}
+
+/* Custom SVG Cursor (Ecru color #F5F5DC, stroke slate-800 #1e293b, slightly larger 36x36) */
+* {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="%23F5F5DC" stroke="%231e293b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 3 7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/></svg>') 4 4, auto !important;
+}
+
+/* Hide scrollbar for clean SPA look */
+::-webkit-scrollbar {
+  display: none;
+}
