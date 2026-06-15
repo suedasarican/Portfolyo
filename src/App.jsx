@@ -24,7 +24,7 @@ function App() {
       {/* Title */}
       <div className="absolute top-8 left-0 w-full text-center z-30 pointer-events-none">
         <h1 className="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg tracking-tight">
-          Süeda Nur SARICAN - Portfolyo
+          Süeda Nur SARICAN
         </h1>
         <p className="mt-2 text-pink-600 font-medium bg-white/40 inline-block px-4 py-1 rounded-full backdrop-blur-sm shadow-sm border border-white/50">
           Keşfetmek için bulutlara tıkla!
