@@ -21,7 +21,7 @@ export const projects = [
     tech: ["React Native", "Firebase", "Firestore", "Firebase Auth"],
     color: "from-blue-200 to-sky-300",
     accent: "#93c5fd",
-    image: "https://placehold.co/600x400/dbeafe/1d4ed8?text=CampusCareer&font=nunito",
+    image: "/images/campuscareer.png",
     emoji: "📱",
   },
   {

@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion';
-import CatMascot from './CatMascot';
 import { MapPin, Mail, Phone } from 'lucide-react';
 import { contactData } from '../data';
+
+// Fotoğrafın dosya adını buradan değiştirebilirsin:
+// .jpg, .jpeg veya .png hepsi çalışır.
+const PROFILE_IMAGE = '/images/profile.jpg';
 
 export default function HeroSection() {
   return (
@@ -63,14 +66,57 @@ export default function HeroSection() {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="flex flex-col items-center gap-4"
         >
-          {/* Kedi maskot + parlama */}
+          {/* Profil fotoğrafı */}
           <div className="relative">
+            {/* Dış parlama */}
             <div
-              className="absolute inset-0 rounded-full opacity-40 blur-2xl scale-110"
-              style={{ background: 'radial-gradient(circle, #f9a8d4, #fcd34d)' }}
+              className="absolute inset-0 rounded-full opacity-50 blur-2xl scale-125"
+              style={{ background: 'radial-gradient(circle, #f9a8d4 0%, #c4b5fd 50%, transparent 80%)' }}
             />
-            <div className="relative glass rounded-3xl p-6 shadow-xl">
-              <CatMascot size={150} />
+
+            {/* Dönen gradient halka */}
+            <motion.div
+              animate={{ rotate: 360 }}
+              transition={{ duration: 12, repeat: Infinity, ease: 'linear' }}
+              className="absolute -inset-2 rounded-full"
+              style={{
+                background: 'conic-gradient(from 0deg, #f9a8d4, #93c5fd, #c4b5fd, #fcd34d, #f9a8d4)',
+                padding: '3px',
+              }}
+            >
+              <div className="w-full h-full rounded-full" style={{ background: '#fdf4f5' }} />
+            </motion.div>
+
+            {/* Fotoğraf çerçevesi */}
+            <div
+              className="relative w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden shadow-2xl"
+              style={{
+                border: '4px solid rgba(255,255,255,0.9)',
+                background: 'linear-gradient(135deg, #fce7f3, #e0f2fe)',
+              }}
+            >
+              <img
+                src={PROFILE_IMAGE}
+                alt="Süeda Nur Sarıcan"
+                className="w-full h-full object-cover object-center"
+                onError={(e) => {
+                  // Fotoğraf bulunamazsa soft bir placeholder göster
+                  e.target.style.display = 'none';
+                  e.target.parentNode.innerHTML = `
+                    <div style="width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#fce7f3,#e0f2fe);gap:8px">
+                      <span style="font-size:3rem">🐱</span>
+                      <span style="font-size:11px;font-weight:600;color:#be185d;text-align:center;padding:0 12px">public/images/<br/>profile.jpg ekle</span>
+                    </div>`;
+                }}
+              />
+            </div>
+
+            {/* Online badge */}
+            <div
+              className="absolute bottom-2 right-2 glass rounded-full px-2.5 py-1 flex items-center gap-1.5 shadow-md"
+            >
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              <span className="text-xs font-bold" style={{ color: '#3d2b50' }}>Açık</span>
             </div>
           </div>
 
