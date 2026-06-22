@@ -2,16 +2,134 @@
 
 @layer base {
   body {
-    @apply bg-gradient-to-b from-blue-200 via-pink-100 to-orange-100 min-h-screen overflow-hidden text-slate-800 font-sans;
+    font-family: 'Nunito', 'Quicksand', sans-serif;
+    background-color: #faf7f4;
+    color: #3d3540;
+    overflow-x: hidden;
   }
 }
 
-/* Custom SVG Cursor (Ecru color #F5F5DC, stroke slate-800 #1e293b, slightly larger 36x36) */
-* {
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="%23F5F5DC" stroke="%231e293b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m3 3 7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/></svg>') 4 4, auto !important;
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
 }
 
-/* Hide scrollbar for clean SPA look */
+/* Custom scrollbar - soft pink */
 ::-webkit-scrollbar {
-  display: none;
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #fdf0f0;
+}
+::-webkit-scrollbar-thumb {
+  background: #f9c0cb;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f4a0b0;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.glass-soft {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Progress bar animation */
+@keyframes fillBar {
+  from { width: 0%; }
+  to { width: var(--target-width); }
+}
+
+.progress-fill {
+  animation: fillBar 1.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Floating animation for cat */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(-1deg); }
+  50% { transform: translateY(-12px) rotate(1deg); }
+}
+
+.cat-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Tail wag animation */
+@keyframes tailWag {
+  0%, 100% { transform: rotate(-15deg) translateY(0); }
+  25% { transform: rotate(5deg) translateY(-2px); }
+  75% { transform: rotate(-30deg) translateY(2px); }
+}
+
+.cat-tail {
+  animation: tailWag 2.5s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+/* Ear twitch */
+@keyframes earTwitch {
+  0%, 90%, 100% { transform: rotate(0deg); }
+  92% { transform: rotate(-8deg); }
+  96% { transform: rotate(5deg); }
+}
+
+.cat-ear-left {
+  animation: earTwitch 6s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+/* Blink animation */
+@keyframes blink {
+  0%, 92%, 100% { transform: scaleY(1); }
+  95% { transform: scaleY(0.05); }
+}
+
+.cat-eye {
+  animation: blink 4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/* Soft pulse for timeline dots */
+@keyframes softPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(249, 168, 190, 0.5); }
+  50% { box-shadow: 0 0 0 8px rgba(249, 168, 190, 0); }
+}
+
+.timeline-dot {
+  animation: softPulse 2.5s ease-in-out infinite;
+}
+
+/* Card hover lift */
+.project-card {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 60px rgba(249, 168, 190, 0.3), 0 8px 24px rgba(0,0,0,0.06);
+}
+
+/* Section fade-in (used as fallback) */
+@keyframes sectionFadeIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Star shimmer */
+@keyframes shimmer {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.3); }
+}
+
+.shimmer-star {
+  animation: shimmer 3s ease-in-out infinite;
 }

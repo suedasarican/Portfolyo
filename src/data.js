@@ -1,78 +1,161 @@
-import { Plane, Dna, Cloud, Microscope, Smartphone, Terminal, Gamepad2 } from 'lucide-react';
-
+// ─── PROJECTS ────────────────────────────────────────────────────────────────
 export const projects = [
   {
     id: 1,
-    title: "TEKNOFEST 2026 | Havacılıkta Yapay Zeka (İHA Nesne Tespiti)",
-    content: "Ön Tasarım Raporu başarıyla geçildi; Albumentations ile zorlu hava koşulları için sentetik veri üretildi. YOLOv8 ile nesne tespiti sağlandı, Kalman Filtresi destekli ego-motion telafi stratejisi geliştirildi.",
-    Icon: Plane,
-    position: { top: '25%', left: '20%' },
-    delay: 0,
+    title: "YUMI",
+    subtitle: "Full-Stack E-Ticaret Platformu",
+    description:
+      "Eğitici oyuncaklar için React, ASP.NET Core ve PostgreSQL ile kurgulanan modern bir full-stack e-ticaret platformu. Ürün yönetimi, sepet, ödeme akışı ve admin paneli içerir. RESTful API tasarımı ile güçlü bir backend mimarisi kurgulandı.",
+    tech: ["React.js", "ASP.NET Core", "PostgreSQL", "Tailwind CSS"],
+    color: "from-pink-300 to-rose-300",
+    accent: "#f9a8d4",
+    image: "https://placehold.co/600x400/fce7f3/be185d?text=YUMI+Platform&font=nunito",
+    emoji: "🧸",
   },
   {
     id: 2,
-    title: "TEKNOFEST 2026 | Sağlıkta Yapay Zeka (Varyant Sınıflandırma)",
-    content: "Proje Sunuş Raporu başarıyla geçildi; sınıf dengesizliği için CTGAN ile sentetik veri artırımı uygulandı. Overfitting riskine karşı XGBoost ve LightGBM tabanlı Stacking Ensemble mimarisi kurgulandı.",
-    Icon: Dna,
-    position: { top: '35%', left: '45%' },
-    delay: 2,
+    title: "CampusCareer",
+    subtitle: "Mobil Kariyer Platformu",
+    description:
+      "React Native ve Firebase ile geliştirilen, öğrenciler için tasarlanmış gerçek zamanlı veri akışına sahip mobil kariyer platformu. Firestore ile anlık veri senkronizasyonu, Firebase Auth ile güvenli kimlik doğrulama sağlandı.",
+    tech: ["React Native", "Firebase", "Firestore", "Firebase Auth"],
+    color: "from-blue-200 to-sky-300",
+    accent: "#93c5fd",
+    image: "https://placehold.co/600x400/dbeafe/1d4ed8?text=CampusCareer&font=nunito",
+    emoji: "📱",
   },
   {
     id: 3,
-    title: "SmartClass AIoT Automation System",
-    content: "ESP32 sensör verileri Firebase'e entegre edilerek, Keras/TensorFlow (LSTM) tabanlı proaktif kararlar alan bulut yapay zeka servisi geliştirildi. Çok disiplinli (EE & Bilgisayar) bir ekiple, otonom kararların izlendiği React tabanlı arayüz tasarlandı.",
-    Icon: Cloud,
-    position: { top: '25%', left: '70%' },
-    delay: 4,
+    title: "SmartClass AIoT",
+    subtitle: "Otonom Sınıf Otomasyon Sistemi",
+    description:
+      "ESP32 sensör verileri Firebase'e entegre edilerek, Keras/TensorFlow ile LSTM tabanlı proaktif kararlar alan bulut yapay zeka servisi geliştirildi. Çok disiplinli (EE & Bilgisayar) bir ekiple, otonom kararların izlendiği React tabanlı arayüz tasarlandı.",
+    tech: ["ESP32", "Firebase", "LSTM", "TensorFlow", "React"],
+    color: "from-violet-200 to-purple-300",
+    accent: "#c4b5fd",
+    image: "https://placehold.co/600x400/ede9fe/6d28d9?text=SmartClass+AIoT&font=nunito",
+    emoji: "🏫",
   },
   {
     id: 4,
-    title: "Blood Cell Classification (AI Model)",
-    content: "Kan hücresi görüntülerini yüksek doğrulukla sınıflandırmak üzere Python ile Konvolüsyonel Sinir Ağı (CNN) modeli tasarlandı.",
-    Icon: Microscope,
-    position: { top: '50%', left: '80%' },
-    delay: 1,
+    title: "Fragments of Time",
+    subtitle: "72 Saatlik GameJam Oyunu",
+    description:
+      "Yapay Zeka ve Teknoloji Akademisi kapsamında, 72 saat içinde Unity ve C# kullanılarak geliştirilen AI tabanlı 2D oyun projesi. Zaman manipülasyonu mekaniği ve procedural level generation ile özgün bir oyun deneyimi sunuldu.",
+    tech: ["Unity", "C#", "AI", "2D Game Design"],
+    color: "from-amber-200 to-orange-300",
+    accent: "#fcd34d",
+    image: "https://placehold.co/600x400/fef3c7/b45309?text=Fragments+of+Time&font=nunito",
+    emoji: "🎮",
   },
   {
     id: 5,
-    title: "Web & Mobil Ürün Geliştirme (Yumi & CampusCareer)",
-    content: "Yumi: Eğitici oyuncaklar için React, ASP.NET Core ve PostgreSQL kullanılarak geliştirilen full-stack e-ticaret platformu. CampusCareer: Öğrenciler için React Native ve Firebase (Firestore, Auth) kullanılarak geliştirilen, gerçek zamanlı mobil kariyer uygulaması.",
-    Icon: Smartphone,
-    position: { top: '55%', left: '35%' },
-    delay: 3,
+    title: "TEKNOFEST AI",
+    subtitle: "Havacılık & Sağlık Yapay Zeka",
+    description:
+      "İki ayrı TEKNOFEST projesi: (1) YOLOv8 ile ego-motion telafili nesne tespiti — Albumentations ile sentetik veri artırımı ve Kalman Filtresi destekli strateji. (2) CTGAN/XGBoost ile genomik varyant sınıflandırma — Stacking Ensemble mimarisi.",
+    tech: ["YOLOv8", "CTGAN", "XGBoost", "Kalman Filter", "Python"],
+    color: "from-teal-200 to-cyan-300",
+    accent: "#5eead4",
+    image: "https://placehold.co/600x400/ccfbf1/0f766e?text=TEKNOFEST+AI&font=nunito",
+    emoji: "✈️",
   },
   {
     id: 6,
     title: "42 Core Curriculum",
-    content: "C dilinde bellek yönetimi ve sistem mimarisi odaklı projeler: Özel C kütüphanesi (Libft), bellek sızıntısız statik değişkenli dosya okuma (get_next_line), varyadik argüman yönetimi (ft_printf) ve O(n log n) karmaşıklığına sahip yığın (stack) tabanlı asimptotik sıralama algoritması (push_swap).",
-    Icon: Terminal,
-    position: { top: '75%', left: '50%' },
-    delay: 5,
+    subtitle: "Sistem Programlama & Algoritmalar",
+    description:
+      "C dilinde bellek yönetimi ve sistem mimarisi odaklı projeler: Özel C kütüphanesi (Libft), bellek sızıntısız statik değişkenli dosya okuma (get_next_line), varyadik argüman yönetimi (ft_printf) ve O(n log n) yığın tabanlı asimptotik sıralama algoritması (push_swap).",
+    tech: ["C", "Memory Management", "Algorithms", "Linux"],
+    color: "from-slate-200 to-zinc-300",
+    accent: "#94a3b8",
+    image: "https://placehold.co/600x400/f1f5f9/334155?text=42+Core+Curriculum&font=nunito",
+    emoji: "⚙️",
   },
-  {
-    id: 7,
-    title: "Fragments of Time (GameJam)",
-    content: "Yapay Zeka ve Teknoloji Akademisi kapsamında, 72 saat içinde Unity ve C# kullanılarak geliştirilen 2D oyun projesi.",
-    Icon: Gamepad2,
-    position: { top: '75%', left: '75%' },
-    delay: 2.5,
-  }
 ];
 
-export const aboutData = {
-  aboutMe: "Yapay zeka ve modern yazılım teknolojileriyle ilgilenen Bilgisayar Mühendisliği öğrencisiyim. Proje tabanlı öğrenmeye önem vererek derin öğrenme modelleri eğitiyor, web ve mobil platformlar için kod yazıyorum.",
-  education: "İst. Medeniyet Üni. (Bilgisayar Müh. GPA: 3.59), 42 İstanbul (Ecole 42), Google Yapay Zeka Akademisi.",
-  skills: "C, C#, Python, Java, JavaScript, TypeScript, React.js, React Native, ASP.NET Core.",
-  ai: "Derin Öğrenme (CNN, YOLO), Computer Vision, ML, NumPy, Pandas, TensorFlow.",
-  databases: "PostgreSQL, Oracle, Firebase (NoSQL).",
-  certificates: "Google Proje Yönetimi Profesyonel Sertifikası, Yapay Zeka Eklentili Oyun Geliştirme.",
-  languages: "İngilizce - B2"
-};
+// ─── EDUCATION ───────────────────────────────────────────────────────────────
+export const education = [
+  {
+    id: 1,
+    year: "2022 – Devam",
+    school: "İstanbul Medeniyet Üniversitesi",
+    degree: "Bilgisayar Mühendisliği",
+    detail: "GPA: 3.59 / 4.00",
+    color: "#f9a8d4",
+    icon: "🎓",
+  },
+  {
+    id: 2,
+    year: "2024 – Devam",
+    school: "42 İstanbul (Ecole 42)",
+    degree: "Yazılım Mühendisliği",
+    detail: "Proje tabanlı ve akran öğrenmesine dayalı, C ve sistem programlama eğitimi.",
+    color: "#93c5fd",
+    icon: "🏫",
+  },
+  {
+    id: 3,
+    year: "2024",
+    school: "Google Yapay Zeka Akademisi",
+    degree: "AI & Oyun Geliştirme",
+    detail: "Unity ve C# ile yapay zeka destekli simülasyon geliştirme ve proje yönetimi.",
+    color: "#6ee7b7",
+    icon: "🤖",
+  },
+];
 
+// ─── SKILLS ──────────────────────────────────────────────────────────────────
+export const skillGroups = [
+  {
+    category: "Web & Mobil",
+    color: "#f9a8d4",
+    bgColor: "from-pink-200 to-rose-200",
+    skills: [
+      { name: "React.js", level: 88 },
+      { name: "React Native", level: 80 },
+      { name: "ASP.NET Core", level: 75 },
+    ],
+  },
+  {
+    category: "Programlama Dilleri",
+    color: "#93c5fd",
+    bgColor: "from-blue-200 to-sky-200",
+    skills: [
+      { name: "Python", level: 85 },
+      { name: "C", level: 80 },
+      { name: "C# (Unity)", level: 72 },
+    ],
+  },
+  {
+    category: "Yapay Zeka & Veri",
+    color: "#c4b5fd",
+    bgColor: "from-violet-200 to-purple-200",
+    skills: [
+      { name: "Derin Öğrenme (CNN, YOLO)", level: 82 },
+      { name: "Computer Vision", level: 78 },
+      { name: "Makine Öğrenmesi", level: 75 },
+    ],
+  },
+  {
+    category: "Veritabanı & Araçlar",
+    color: "#6ee7b7",
+    bgColor: "from-emerald-200 to-teal-200",
+    skills: [
+      { name: "PostgreSQL", level: 78 },
+      { name: "Firebase", level: 85 },
+      { name: "Linux & Git", level: 80 },
+    ],
+  },
+];
+
+// ─── CONTACT ─────────────────────────────────────────────────────────────────
 export const contactData = {
-  phone: "+905079000743",
+  phone: "+90 507 900 07 43",
   email: "suedanurssarican@gmail.com",
   location: "Üsküdar / İstanbul",
-  linkedin: "www.linkedin.com/in/süeda-nur-sarıcan",
-  github: "github.com/suedasarican"
+  linkedin: "linkedin.com/in/süeda-nur-sarıcan",
+  linkedinUrl: "https://www.linkedin.com/in/s%C3%BCeda-nur-sar%C4%B1can",
+  github: "github.com/suedasarican",
+  githubUrl: "https://github.com/suedasarican",
 };
