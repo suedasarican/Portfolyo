@@ -21,7 +21,7 @@ export const projects = [
     tech: ["React Native", "Firebase", "Firestore", "Firebase Auth"],
     color: "from-blue-200 to-sky-300",
     accent: "#93c5fd",
-    image: "/images/campuscareer.png",
+    image: "/images/campuscareer.jpeg",
     emoji: "📱",
   },
   {
@@ -33,7 +33,7 @@ export const projects = [
     tech: ["ESP32", "Firebase", "LSTM", "TensorFlow", "React"],
     color: "from-violet-200 to-purple-300",
     accent: "#c4b5fd",
-    image: "https://placehold.co/600x400/ede9fe/6d28d9?text=SmartClass+AIoT&font=nunito",
+    image: "/images/smartclass.png",
     emoji: "🏫",
   },
   {
@@ -45,7 +45,7 @@ export const projects = [
     tech: ["Unity", "C#", "AI", "2D Game Design"],
     color: "from-amber-200 to-orange-300",
     accent: "#fcd34d",
-    image: "https://placehold.co/600x400/fef3c7/b45309?text=Fragments+of+Time&font=nunito",
+    image: "/images/fragments.png",
     emoji: "🎮",
   },
   {
