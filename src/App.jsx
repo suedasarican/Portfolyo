@@ -11,11 +11,8 @@ function App() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
-    <div className="min-h-screen" style={{ fontFamily: 'Nunito, sans-serif' }}>
-      {/* Sticky Navbar */}
+    <div className="min-h-screen" style={{ fontFamily: 'Plus Jakarta Sans, Inter, sans-serif' }}>
       <Navbar />
-
-      {/* Ana içerik */}
       <main>
         <HeroSection />
         <EducationSection />
@@ -23,8 +20,6 @@ function App() {
         <ProjectsSection onProjectClick={setSelectedProject} />
         <ContactSection />
       </main>
-
-      {/* Proje Detay Modalı */}
       <ProjectModal
         project={selectedProject}
         onClose={() => setSelectedProject(null)}

@@ -11,6 +11,8 @@ export const projects = [
     accent: "#f9a8d4",
     image: "https://placehold.co/600x400/fce7f3/be185d?text=YUMI+Platform&font=nunito",
     emoji: "🧸",
+    githubUrl: null,
+    featured: false,
   },
   {
     id: 2,
@@ -23,9 +25,26 @@ export const projects = [
     accent: "#93c5fd",
     image: "/images/campuscareer.jpeg",
     emoji: "📱",
+    githubUrl: null,
+    featured: false,
   },
   {
     id: 3,
+    title: "EVRAG — KAMUAI",
+    subtitle: "TEKNOFEST Dil Ajanları Yarışması",
+    description:
+      "Belediyelere ulaşan evrakları kurumsal iş akışlarına dönüştüren AI destekli evrak otomasyon platformu. LangGraph ile çok-ajanlı orkestrasyon, FastAPI backend, Qdrant vektör veritabanı üzerinde RAG mimarisi ve resmî yazışma format motoru (Jinja2 + deterministik doğrulama) içerir. Human-in-the-loop onay akışlarıyla tam kapalı döngü çalışır.",
+    tech: ["Python", "FastAPI", "LangGraph", "Qdrant", "React", "TypeScript", "Ollama", "Docker"],
+    color: "from-cyan-400 to-violet-500",
+    accent: "#22d3ee",
+    image: "/images/evrag.jpg",
+    emoji: "🏛️",
+    githubUrl: "https://github.com/suedasarican/teknofest-dil-ajanlari-yarismasi",
+    featured: true,
+    badge: "🏆 TEKNOFEST",
+  },
+  {
+    id: 4,
     title: "SmartClass AIoT",
     subtitle: "Otonom Sınıf Otomasyon Sistemi",
     description:
@@ -35,9 +54,11 @@ export const projects = [
     accent: "#c4b5fd",
     image: "/images/smartclass.png",
     emoji: "🏫",
+    githubUrl: null,
+    featured: false,
   },
   {
-    id: 4,
+    id: 5,
     title: "Fragments of Time",
     subtitle: "72 Saatlik GameJam Oyunu",
     description:
@@ -47,9 +68,11 @@ export const projects = [
     accent: "#fcd34d",
     image: "/images/fragments.png",
     emoji: "🎮",
+    githubUrl: null,
+    featured: false,
   },
   {
-    id: 5,
+    id: 6,
     title: "TEKNOFEST AI",
     subtitle: "Havacılık & Sağlık Yapay Zeka",
     description:
@@ -59,9 +82,11 @@ export const projects = [
     accent: "#5eead4",
     image: "https://placehold.co/600x400/ccfbf1/0f766e?text=TEKNOFEST+AI&font=nunito",
     emoji: "✈️",
+    githubUrl: null,
+    featured: false,
   },
   {
-    id: 6,
+    id: 7,
     title: "42 Core Curriculum",
     subtitle: "Sistem Programlama & Algoritmalar",
     description:
@@ -71,6 +96,8 @@ export const projects = [
     accent: "#94a3b8",
     image: "https://placehold.co/600x400/f1f5f9/334155?text=42+Core+Curriculum&font=nunito",
     emoji: "⚙️",
+    githubUrl: null,
+    featured: false,
   },
 ];
 
@@ -132,8 +159,8 @@ export const skillGroups = [
     color: "#c4b5fd",
     bgColor: "from-violet-200 to-purple-200",
     skills: [
+      { name: "LangGraph / Ajanlar", level: 83 },
       { name: "Derin Öğrenme (CNN, YOLO)", level: 82 },
-      { name: "Computer Vision", level: 78 },
       { name: "Makine Öğrenmesi", level: 75 },
     ],
   },
@@ -142,9 +169,9 @@ export const skillGroups = [
     color: "#6ee7b7",
     bgColor: "from-emerald-200 to-teal-200",
     skills: [
-      { name: "PostgreSQL", level: 78 },
+      { name: "PostgreSQL / Qdrant", level: 78 },
       { name: "Firebase", level: 85 },
-      { name: "Linux & Git", level: 80 },
+      { name: "Docker & Linux & Git", level: 80 },
     ],
   },
 ];
