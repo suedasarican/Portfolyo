@@ -76,7 +76,7 @@ export const projects = [
     title: "TEKNOFEST AI",
     subtitle: "Havacılık & Sağlık Yapay Zeka",
     description:
-      "İki ayrı TEKNOFEST projesi: (1) YOLOv8 ile ego-motion telafili nesne tespiti — Albumentations ile sentetik veri artırımı ve Kalman Filtresi destekli strateji. (2) CTGAN/XGBoost ile genomik varyant sınıflandırma — Stacking Ensemble mimarisi.",
+      "İki ayrı TEKNOFEST projesi: (1) YOLOv8 ile ego-motion telafili nesne tespiti — Albumentations ile sentetik veri artırımı ve Kalman Filtresi destekli strateji. (2) CTGAN/XGBoost ile genomik varyant sınıflandırma — Stacking Ensemble mimarisi. Ayrıca bu proje ile Sağlıkta Yapay Zeka kategorisinde 1.500 takım arasından finale kalınmıştır.",
     tech: ["YOLOv8", "CTGAN", "XGBoost", "Kalman Filter", "Python"],
     color: "from-teal-200 to-cyan-300",
     accent: "#5eead4",
