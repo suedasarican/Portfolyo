@@ -108,7 +108,7 @@ export const education = [
     year: "2022 – Devam",
     school: "İstanbul Medeniyet Üniversitesi",
     degree: "Bilgisayar Mühendisliği",
-    detail: "GPA: 3.59 / 4.00",
+    detail: "GPA: 3.63 / 4.00",
     color: "#f9a8d4",
     icon: "🎓",
   },
